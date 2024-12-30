@@ -1,0 +1,57 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.happy-new-year-message,
+.new-year-text {
+  position: absolute;
+  margin-top: 25%;
+  left: 50%;
+  font-size: 6rem;
+  color: red;
+  /* color: "#ff2d2d", "#f5a742", "#ffe300", "#36fe40", "#42f5ef", "#003eea", "#9d42f5", "#f242f5" */
+  opacity: 0;
+  z-index: 2;
+}
+
+.happy-new-year-message {
+  font-style: italic;
+  animation: moveUp 3s linear forwards;
+}
+
+.new-year-text {
+  animation: moveDown 3s linear forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, -30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -60px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 60px);
+    opacity: 1;
+  }
+}
