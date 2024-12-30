@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jl-new-years/static/css/main.073063d3.css",
+    "main.js": "/jl-new-years/static/js/main.86408b30.js",
+    "index.html": "/jl-new-years/index.html",
+    "main.073063d3.css.map": "/jl-new-years/static/css/main.073063d3.css.map",
+    "main.86408b30.js.map": "/jl-new-years/static/js/main.86408b30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073063d3.css",
+    "static/js/main.86408b30.js"
+  ]
+}
