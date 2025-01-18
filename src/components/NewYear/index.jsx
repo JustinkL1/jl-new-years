@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import './index.css';
 
-function NewYear() {
+function NewYear({timeLeft}) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -110,7 +110,7 @@ function NewYear() {
     <div>
       <canvas ref={canvasRef}></canvas>
       <div className="happy-new-year-message">Happy New Year!!!</div>
-      <div className="new-year-text">2025</div>
+      <div className="new-year-text">{timeLeft.nextYear}</div>
     </div>
   );
 }

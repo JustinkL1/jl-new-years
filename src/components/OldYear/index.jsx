@@ -11,7 +11,7 @@ function OldYear({ timeLeft }) {
           {timeLeft.seconds.toString().padStart(2, "0")}
         </div>
       )}
-      <div className="old-year-text">2024</div>
+      <div className="old-year-text">Countdown to {timeLeft.nextYear}</div>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function App() {
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
 
-    return { days: daysLeft, hours, minutes, seconds };
+    return { days: daysLeft, nextYear: nextYear.getFullYear(), hours, minutes, seconds };
   }
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="app-container">
-      {isNewYear ? <NewYear /> : <OldYear timeLeft={timeLeft} />}
+      {isNewYear ? <NewYear timeLeft={timeLeft} /> : <OldYear timeLeft={timeLeft} />}
     </div>
   );
 }
